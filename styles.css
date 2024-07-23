@@ -1,0 +1,55 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('bg4.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    transition: background 0.5s ease;
+    overflow: hidden; /* Prevent scroll bars */
+}
+
+.container {
+    text-align: center;
+    background: url('sbg1.jpg') no-repeat center center fixed; 
+    background-size: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 80%;
+    max-width: 500px;
+    transition: opacity 0.5s ease;
+}
+
+.container.hidden {
+    display: none;
+}
+
+#container2 {
+    background: url('empty.jpg') no-repeat center center fixed; 
+    background-size: auto;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #f6adc6;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f4c2c2;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
