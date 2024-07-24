@@ -34,12 +34,20 @@ document.addEventListener("DOMContentLoaded", () => {
         "It's strange how you can make my heart forget to beat by just smiling at me",
         "You don't know how glad I am to be stuck with you forever",
         "Wild Card!!<br>Even if this is not your first wild card of the day send me a picture of you",
-        "You are beautiful Adrika<br>You make the clouds look dreamier<br>You make my heart flutter<br>I'm pretty sure the stars shine brighter when we are together"
+        "You are beautiful Adrika<br>You make the clouds look dreamier<br>You make my heart flutter<br>I'm pretty sure the stars shine brighter when we are together",
+        "Ever since I met you, I've felt abandoned without your nearness; your nearness is all I ever dream of, the only thing",
+        "Falling in love with you was the best mistake I ever made and I'd choose to make it over and over again",
+        "Tell me your secrets, your feelings, your most trivial of thoughts because they are as important as life itself to me",
+        "You should compliment me sometimes too dude",
+        "What it means to have lived I do not know but being with you has made me understand what it means to have loved",
+        "Your precious smiles man I've lost sleep over them",
+        "One word from you and I will jump off of this ledge I'm on baby<br>tell me 'don't' so I can crawl back in",
+        "These days I wonder if the skies are shedding tears of my yearning for you"
     ];
 
     generateButton.addEventListener("click", () => {
         if (phrases.length > 0) {
-            const randomIndex = Math.floor(Math.random() * phrases.length);
+            const randomIndex = Math.floor(Math.random() * (phrases.length+1));
             phraseDisplay.innerHTML = phrases[randomIndex];
             //phraseDisplay.innerHTML = "In the midst of the crowds<br>In the shapes in the clouds<br>I don't see nobody but you<br>In my rose-tinted dreams<br>Wrinkled silks of my sheets<br>I don't see nobody but you";
             console.log('Random phrase:', phrases[randomIndex]);
