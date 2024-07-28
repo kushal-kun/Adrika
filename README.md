@@ -1,1 +1,1 @@
-I do not know if you will like it but I hope that you do
+Eventually hope to get photos working on this site

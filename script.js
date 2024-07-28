@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const phrases = [
         "I'd worship the very ground you walk on",
         "Something in the way she moves<br>attracts me like no other lover",
-        "君のことを愛している",
+        "I love you so much adrika you have no idea",
         "You are the object of my every daydream",
         "You were beautiful from afar and you only get more and more so the closer I get",
         "Every moment I spend with you is worth the weeks I endure your absence",
@@ -42,14 +42,30 @@ document.addEventListener("DOMContentLoaded", () => {
         "What it means to have lived I do not know but being with you has made me understand what it means to have loved",
         "Your precious smiles man I've lost sleep over them",
         "One word from you and I will jump off of this ledge I'm on baby<br>tell me 'don't' so I can crawl back in",
-        "These days I wonder if the skies are shedding tears of my yearning for you"
+        "These days I wonder if the skies are shedding tears of my yearning for you",
+        "Eros' arrows could not have bewitched me how your eyes have pierced my heart",
+        "You are my blissful torment, the most beautiful oxymoron",
+        "Love me and leave me not",
+        "\"I will take care of you.\"<br>\"It's rotten work\"<br>\"Not for me. Not with you.\"",
+        "I'm infatuated with you quite wholly smitten, these are words I've only ever uttered for you",
+        "Stolen gazes and blatant excuses sometimes love is as simple as that",
+        "The world is too homogenous and too chaotic at the same time. Quite like you actually since you are my whole world too",
+        "I think I want you more than want<br>I know I need you more than need<br>I want to hold you more than hold<br>Everytime you look at me",
+        "Secrets that I held in my heart<br>are harder to hide than I thought<br>baby I just wanna be yours<br>I wanna be yours",
+        "I adore you",
+        "You're the one I've been waiting for",
+        "Wild card!! Call me and as soon as I pick up say \"I love you\" and hang up",
+        "Wild card!! Tell me something that has been on your mind or you wanted to talk to me about but you haven't been able to for some reason",
+        "Some days I wonder if I deserve the happiness of your company",
+        "I love your optimism you inspire me to have bold aspirations of my own",
+        ""
     ];
 
     generateButton.addEventListener("click", () => {
         if (phrases.length > 0) {
             const randomIndex = Math.floor(Math.random() * (phrases.length+1));
             phraseDisplay.innerHTML = phrases[randomIndex];
-            //phraseDisplay.innerHTML = "In the midst of the crowds<br>In the shapes in the clouds<br>I don't see nobody but you<br>In my rose-tinted dreams<br>Wrinkled silks of my sheets<br>I don't see nobody but you";
+            //phraseDisplay.innerHTML = "\"I will take care of you.\"<br>\"It's rotten work\"<br>\"Not for me. Not with you.\"";
             console.log('Random phrase:', phrases[randomIndex]);
 
             // Change background image
@@ -74,4 +90,21 @@ document.addEventListener("DOMContentLoaded", () => {
         container2.classList.add('hidden');
         container1.classList.remove('hidden');
     });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('myAudio');
+
+    // Check if audio is already playing (for subsequent interactions)
+    function playAudio() {
+        if (audio.paused) {
+            audio.play().catch(function(error) {
+                console.log('Audio play was prevented:', error);
+            });
+        }
+    }
+
+    // Listen for any user interaction to start playing audio
+    document.addEventListener('click', playAudio, { once: true });
+    document.addEventListener('touchstart', playAudio, { once: true });
 });
