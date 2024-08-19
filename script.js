@@ -15,12 +15,19 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error('Error loading phrases:', error);
     });
 
+    function getRandomInt(max){
+        const array = new Uint32Array(1);
+        window.crypto.getRandomValues(array);
+        return array[0]%max;
+    }
+
     generateButton.addEventListener("click", () => {
         if (phrases.length > 0) {
-            const randomIndex = Math.floor(Math.random() * (phrases.length+1));
+            const randomIndex = getRandomInt(phrases.length+1);
             phraseDisplay.innerHTML = phrases[randomIndex];
-            //phraseDisplay.innerHTML = "I want you to know that I love you the most<br>I'll always be there right by your side<br>'cause baby you're always in my mind<br>just give me your forever";
-            console.log('Random phrase:', phrases[randomIndex]);
+            phraseDisplay.innerHTML = "<font color=\"red\">I love you<br>I love you<br>I love you<br>I love you<br>I love you<br>I love you<br>I love you<br>I love you<br>I love you<br>I love you<br>I love you</font>";
+            //console.log('Random phrase:', phrases[randomIndex]);
+            console.log(randomIndex-1)
 
             // Change background image
             document.body.style.background = `url('lbg3.jpg') no-repeat center center fixed`;

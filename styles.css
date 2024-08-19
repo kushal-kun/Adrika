@@ -29,7 +29,7 @@ body {
 }
 
 #container2 {
-    background: url('empty.jpg') no-repeat center center fixed; 
+    background: url('empty.jpg') no-repeat center center fixed;/*there is no picture named empty this makes the container*/ 
     background-size: auto;
 }
 
