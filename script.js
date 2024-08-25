@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (phrases.length > 0) {
             const randomIndex = getRandomInt(phrases.length+1);
             phraseDisplay.innerHTML = phrases[randomIndex];
-            //phraseDisplay.innerHTML = "<font color=\"red\">I love you<br>I love you<br>I love you<br>I love you<br>I love you<br>I love you<br>I love you<br>I love you<br>I love you<br>I love you<br>I love you</font>";
+            //phraseDisplay.innerHTML = "";
             //console.log('Random phrase:', phrases[randomIndex]);
             console.log(randomIndex-1)
 
